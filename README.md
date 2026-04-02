@@ -1,4 +1,4 @@
-# 📦 move2modern.co.uk — Blog Script Library
+# 📦 move2modern.co.uk — Script Library
 
 > **Real-world PowerShell for Microsoft 365 & Intune professionals.**
 > Every script in this repo was written and tested and links to a specific Blog or solution created by [move2modern.co.uk](https://move2modern.co.uk). 
