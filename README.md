@@ -73,12 +73,14 @@ Scripts built around Microsoft's **UTCM Graph API** (March-April 2026). These we
 
 | Script | Purpose |
 |---|---|
-| `Setup-UTCMBaseline.ps1` | Idempotent tenant setup — provisions the UTCM service principal, assigns permissions, and creates the baseline CA monitor |
-| `Get-UTCMDriftResults.ps1` | Queries active drift results and logs them to a SharePoint list |
-| `Reset-UTCMCABaseline-Runbook.ps1` | Azure Automation runbook — detects drift via SharePoint and hands off to the manual reset script |
-| `Reset-UTCMCABaseline-Manual.ps1` | Interactive delegated-auth script — resets the UTCM CA baseline (UTCM write operations require delegated auth, not Managed Identity) |
+| `1 - Get-UTCMInventory.ps1` | Run an initial Inventory for existing Snaphots, Monitors and drifts, Also delete existing objects (Optional) |
+| `2 - Create UTCM and M365 Service Principal-OneOff.ps1` | Provisions the UTCM service principal |
+| `3 - Grant permissions for CA and Intune resource Types.ps1` | Queries for required permissions and creates them in the tenant |
+| `4 - New-UTCMSnapshotProbe-QuotaAwareV4.ps1` | Sets up new UTCM snapshots for CA & Intune related resource Types |
+| `5 - New-UTCMAllMonitorSetup.ps1` | Creates new UTCM Monitors for successful snapshots |
+| `6 - Get-UTCMDriftReport.ps1` | Checks in on the current status to drifts on running monitors |
 
-📖 Read the post: *[Link to Part 2]*
+📖 Read the post: *[[Link to Part 2](https://move2modern.uk/index.php/2026/04/05/move-aside-utcm-is-here-or-is-it/)]*
 
 #### ⚡ Quick reference — UTCM service principals
 
