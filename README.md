@@ -57,7 +57,7 @@ Most scripts in this repo target **Microsoft 365 and Intune** environments and s
 
 ## 📁 intune-utcm-drift — Configuration Drift Management
 
-> **Blog series:** [Intune Configuration Drift Management](https://move2modern.co.uk)
+> **Blog series:** [Intune Configuration Drift Management](https://move2modern.uk)
 > Microsoft 365 & Intune | Entra ID | Azure Automation | SharePoint
 
 ### Part 1 — Intune Alternative approaches to UTCM:
